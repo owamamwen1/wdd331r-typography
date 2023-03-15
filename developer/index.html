@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sysadmin Exam Tips</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main>
+    <section>
+      <h1>Sysadmin Exam Tips</h1>
+      <h2>Installing Third-Party Applications</h2>
+      <p>
+        If you want to install a third-party or custom application, it's
+        logical to place it in the <p3>/usr/local/appname</p3> directory,
+        possibly with a link to the program binary in the
+        <p3>/usr/local/bin</p3> directory. Keep in mind that if you have a
+        choice between putting the software package in the /usr/local/bigprog
+        section and the <p3>/opt/bigprog</p3> section, the /opt section is not
+        considered to be sharable, whereas the /usr section is often shared
+        and mounted by client systems.
+      </p>
+      <div class="alert-container">
+        <span class="alert"><a href="https://imgbb.com/"><img src="https://i.ibb.co/NWdj2B4/fa.png" alt="fa"
+              border="0" /></a></span>
+        <p class="mono">
+          If given a choice between putting the software package
+          <p4>BIGPROG</p4> in the <p3>/usr/local/<p4>BIGPROG</p4>
+          </p3> section
+          and the <p3>/opt/<p4>BIGPROG</p4>
+          </p3> section, it's hard to choose.
+          Read any relevant exam question closely--the main difference being
+          that the <p3>/opt</p3> section is not considered to be sharable,
+          whereas the <p3>/usr</p3> section is often shared and mounted by
+          client systems.
+        </p>
+      </div>
+    </section>
+    <section>
+      <h2>File Management Commands</h2>
+      <p>
+        A major section of the 101 exam is dedicated to how to run commands
+        properly with the right options and arguments. As a good sysadmin,
+        you'll be expected to know how to create, delete, edit, set
+        permissions on, display, move, copy, and determine the type of files
+        and programs.
+      </p>
+      <div class="alert-container">
+        <span class="alert"><a href="https://imgbb.com/"><img src="https://i.ibb.co/NWdj2B4/fa.png" alt="fa"
+              border="0" /></a></span>
+        <p class="mono">
+          You must be able to pick proper and working commands out of lists of
+          possibilities, type in appropriate strings in fill-in-the-blank
+          boxes, and in general show that you've run the programs and
+          utilities in question.
+        </p>
+      </div>
+    </section>
+    <section>
+      <h2>Tips for working with Linux files</h2>
+      <p>
+        Because most users and sysadmins come from a Windows or other OS
+        background, a quick set of recommendations for the less-experienced
+        can be of help here:
+      </p>
+      <ul>
+        <li>
+          <span class="li-firstLine">Hidden files aren't really hidden -
+          </span>
+          They just begin with a ., such as the <p3>.bashrc</p3> and
+          <p3>.bash_profile</p3> files. These are not viewable by normal users
+          with conventional commands and switches and aren't deleted by
+          commands such as <p3>rm -f *.*</p3>.
+        </li>
+        <li>
+          <span class="li-firstLine">Filenames can contain multiple periods or no period characters -
+          </span>
+          The filenames <p3>this.is.a.long.file</p3> and
+          <p3>thisisalongfile</p3> are perfectly reasonable and possible.
+        </li>
+        <li>
+          <span class="li-firstLine">Spaces in filenames look nice, but are a pain to type -
+          </span>
+          Use an _ or a - instead of spaces because it's neater and easier
+          than prefixing all spaces with a \. (To display a space in a
+          filename, the system shows a space prefixes with a backslash.)
+        </li>
+        <li>
+          <span class="li-firstLine">File permissions are crucial - </span>
+          Understand the basic concepts of file permissions and ownership. Use
+          the chmod command to set file permissions and the chown command to
+          change file ownership.
+        </li>
+        <li>
+          <span class="li-firstLine">Use relative and absolute paths - </span>
+          When navigating the Linux filesystem, you can use both relative and
+          absolute paths. Relative paths start from the current directory,
+          while absolute paths start from the root directory.
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+
+</html>
